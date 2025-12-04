@@ -13,8 +13,8 @@
 
 ---
 development:
-  password: 
-  theme_id: 
+  password: tsk1
+  theme_id: 186018791718
   store: dummieztos.store
   ignore_files:
     # Below ignores all json files on deploy to prevent overwriting live settings
