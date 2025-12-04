@@ -1,0 +1,48 @@
+# This file contains the information needed for Shopify to authenticate
+# requests and edit/update your remote theme files.
+#
+# 1. Set up a private app (https://help.shopify.com/api/guides/api-credentials#generate-private-app-credentials)
+#    with "Read and write" permissions for "Theme templates and theme assets".
+# 2. Replace the required variables for each environment below.
+#
+# password, theme_id, and store variables are required.
+#
+# For more information on this config file:
+#   Configuration variables | http://shopify.github.io/themekit/configuration/
+#   Ignore patterns | http://shopify.github.io/themekit/ignores/
+
+---
+development:
+  password: 
+  theme_id: 
+  store: dummieztos.store
+  ignore_files:
+    # Below ignores all json files on deploy to prevent overwriting live settings
+    - templates/*.json
+    - config/settings_data.json
+    - locales/*.json
+
+    # templates within sections for online store 2.0
+    - sections/*.json
+
+    #- sections/annoucement-group.json
+    #- sections/footer-group.json
+    #- sections/header-group.json
+    
+    # More granular ignores for when we need to deploy. Be sure to add any new json files here when relevant
+    #- templates/404.json
+    #- templates/article*json
+    #- templates/blog*json
+    #- templates/cart*json
+    #- templates/collection*json
+    #- templates/customers/*json
+    #- templates/index*json
+    #- templates/list-collections*json
+    #- templates/page*json
+    #- templates/password*json
+    #- templates/product*json
+    #- templates/search*json
+    #- templates/annoucement-group*json
+    #- templates/footer-group*json
+    #- templates/header-group*json
+ 
